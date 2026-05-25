@@ -1,5 +1,7 @@
-const String newApiBaseUrl = 'https://newsapi.org/v2';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-const String apiKey = '';
+final String newApiBaseUrl = dotenv.get('API_URL_BASE');
+
+final String apiKey = dotenv.get('API_KEY');
 const String countryQuery = 'us';
 const String categoryQuery = 'general';
