@@ -44,6 +44,7 @@ dependencies:
   dio: ^5.9.2
   retrofit: ^4.6.0
   json_annotation: ^4.9.0
+  flutter_dotenv: ^6.0.1
 
 dev_dependencies:
   flutter_test:
