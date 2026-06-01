@@ -5,9 +5,9 @@ import 'package:retrofit/retrofit.dart';
 
 part 'news_api_service.g.dart';
 
-@RestApi(baseUrl: newApiBaseUrl)
+@RestApi()
 abstract class NewsApiService {
-  factory NewsApiService(Dio dio) = _NewsApiService;
+  factory NewsApiService(Dio dio, {String baseUrl}) = _NewsApiService;
 
   @GET('/top-headlines')
   Future<HttpResponse<List<ArticleModel>>> getNewsArticle({
