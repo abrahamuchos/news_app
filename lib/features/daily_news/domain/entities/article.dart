@@ -7,7 +7,7 @@ class ArticleEntity extends Equatable {
   final String ? description;
   final String ? url;
   final String ? urlToImage;
-  final String ? publishedAt;
+  final DateTime ? publishedAt;
   final String ? content;
 
   const ArticleEntity({
